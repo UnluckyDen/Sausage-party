@@ -9,29 +9,54 @@ namespace sausage
         public Vector2 inputDirection;
         public GameObject beginTouch;
         public GameObject dragTouch;
+        public bool touchIsEnded;
 
-        public void OnDrag(PointerEventData eventData)
+
+
+        private void Update()
         {
-            dragTouch.transform.position = eventData.position;
+            TouchInput();
+            Debug.Log(inputDirection);
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            Debug.Log(gameObject.name);
             beginTouch.transform.position = eventData.position;
             dragTouch.transform.position = eventData.position;
         }
 
+        public void OnDrag(PointerEventData eventData)
+        {
+            dragTouch.transform.position = eventData.position;
+            InputDirection();
+        }
+
         public void OnPointerUp(PointerEventData eventData)
         {
-            InputDirection();
+
         }
 
         private void InputDirection()
         {
-            inputDirection = beginTouch.transform.position - dragTouch.transform.position;
-            inputDirection.Normalize();
+            inputDirection = (beginTouch.transform.position - dragTouch.transform.position)/Screen.width;
+            
             Debug.Log(inputDirection);
+        }
+
+        public void TouchInput()
+        {
+            foreach (Touch touch in Input.touches)
+            {
+                Debug.Log(touch.phase);
+                if (touch.phase == TouchPhase.Ended)
+                {
+                    touchIsEnded = true;
+                }
+                else
+                {
+                    touchIsEnded = false;
+                }
+            }
         }
     }
 }
