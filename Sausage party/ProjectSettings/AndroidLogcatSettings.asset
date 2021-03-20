@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "HT7460204488",
     "m_SelectedPackage": {
         "deviceId": "HT7460204488",
-        "name": "com.UnluckyDEN.SlickSausage",
-        "processId": 13641,
+        "name": "com.UnluckyDen.SlickSausage",
+        "processId": 18012,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -174,6 +174,24 @@
             "deviceId": "HT7460204488",
             "name": "com.UnluckyDEN.SlickSausage",
             "processId": 13641,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDEN.SlickSausage",
+            "processId": 27246,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDen.SlickSausage",
+            "processId": 16539,
+            "exited": false
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDen.SlickSausage",
+            "processId": 18012,
             "exited": true
         }
     ],
