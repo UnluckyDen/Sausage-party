@@ -6,16 +6,26 @@ namespace sausage
 {
     public class CameraFollow : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        //change to privete
+        public Transform target;
 
+        [SerializeField]
+        float smoothSpeed;
+        [SerializeField]
+        Vector3 offset;
+
+        private void LateUpdate()
+        {
+            Follow(Time.deltaTime);
+            Debug.Log("working");
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Follow(float delta)
         {
-
+            Vector3 desiredPosition = target.position + offset;
+            Vector3 smoothhedPosition = Vector3.Lerp(transform.position,desiredPosition,smoothSpeed/delta);
+            transform.position = smoothhedPosition;
+            transform.LookAt(target);
         }
     }
 }

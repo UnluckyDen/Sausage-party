@@ -7,12 +7,9 @@ namespace sausage
     public class Movment : MonoBehaviour
     {
         [SerializeField]
-        private Rigidbody rigidbody;
-        [SerializeField]
         private float force;
         private InputController inputController;
         Sausage sausage;
-        public Vector3 playerPosition;
 
         // Start is called before the first frame update
         void Start()
@@ -25,21 +22,15 @@ namespace sausage
         void Update()
         {
             Push();
-            PlayerPosition();
         }
 
         private void Push()
         {
             if (sausage.isGroundent && inputController.touchIsEnded)
             {
-                rigidbody.AddForce(inputController.inputDirection * force);
+                sausage.rigidbody.AddForce(inputController.inputDirection * force, ForceMode.Impulse);
                 inputController.touchIsEnded = false;
             }
-        }
-
-        private void PlayerPosition()
-        {
-            playerPosition = rigidbody.transform.position;
         }
     }
 }
