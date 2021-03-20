@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "HT7460204488",
         "name": "com.UnluckyDen.SlickSausage",
-        "processId": 32132,
+        "processId": 4976,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -204,6 +204,12 @@
             "deviceId": "HT7460204488",
             "name": "com.UnluckyDen.SlickSausage",
             "processId": 32132,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDen.SlickSausage",
+            "processId": 4976,
             "exited": true
         }
     ],
