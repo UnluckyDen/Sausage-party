@@ -2353,6 +2353,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.701}
+--- !u!54 &728038887895012249 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 405946133170422146, guid: 9f520332e26e4c848ad88874304b329a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132855802440585755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1132855802440585755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2425,8 +2431,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sausage
       objectReference: {fileID: 0}
+    - target: {fileID: 5745010999850420415, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 3721012634080273483}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f520332e26e4c848ad88874304b329a, type: 3}
+--- !u!1 &3721012634080273480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4331063296459175507, guid: 9f520332e26e4c848ad88874304b329a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132855802440585755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!138 &3721012634080273481
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3721012634080273480}
+  m_ConnectedBody: {fileID: 728038887895012249}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &3721012634080273483 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4331063296459175504, guid: 9f520332e26e4c848ad88874304b329a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132855802440585755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4100635119338405618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3985922836699950313, guid: 9f520332e26e4c848ad88874304b329a,

@@ -8,11 +8,13 @@ namespace sausage
     {
         public bool isGrounded;
         public bool isInAir;
+        public bool landing;
         [SerializeField]
         public Rigidbody rigidBody;
         Movment movment;
         InputController input;
         TrajectoryRenderer trajectoryRenderer;
+        AudioSource audioSource;
 
         // Start is called before the first frame update
         void Start()
@@ -21,6 +23,8 @@ namespace sausage
             rigidBody = gameObject.GetComponent<Rigidbody>();
             trajectoryRenderer = FindObjectOfType<TrajectoryRenderer>();
             movment = GetComponent<Movment>();
+            audioSource = gameObject.GetComponent<AudioSource>();
+            Debug.Log(audioSource);
         }
 
         // Update is called once per frame
@@ -28,6 +32,7 @@ namespace sausage
         {
             DrawTrajectory();
             Moving();
+            Landing();
         }
 
         void DrawTrajectory()
@@ -43,6 +48,15 @@ namespace sausage
             {
                 input.moveDirection = Vector2.zero;
                 input.touchIsEnded = false;
+            }
+        }
+
+        void Landing()
+        {
+            if (landing)
+            {
+                audioSource.pitch = Random.Range(0.6f,1.8f);
+                audioSource.Play();
             }
         }
     }

@@ -19,6 +19,7 @@ namespace sausage
             {
                 sausage.isGrounded = true;
                 sausage.isInAir = false;
+                sausage.landing = false;
             }
         }
         private void OnCollisionExit(Collision collision)
@@ -27,6 +28,15 @@ namespace sausage
             {
                 sausage.isGrounded = false;
                 sausage.isInAir = true;
+                sausage.landing = false;
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.collider.CompareTag("Floor"))
+            {
+                sausage.landing = true;
             }
         }
     }
