@@ -43,7 +43,10 @@ namespace sausage
         void Moving()
         {
             if (input.touchIsEnded)
-            movment.Push(rigidBody, input.moveDirection, isGrounded);
+            {
+                movment.Push(rigidBody, input.moveDirection, isGrounded);
+                input.touchIsEnded = false;
+            }
             if (isInAir)
             {
                 input.moveDirection = Vector2.zero;
