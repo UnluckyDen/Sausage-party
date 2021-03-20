@@ -28,7 +28,7 @@ namespace sausage
         {
             if (sausage.isGroundent && inputController.touchIsEnded)
             {
-                sausage.rigidbody.AddForce(inputController.inputDirection * force, ForceMode.Impulse);
+                sausage.rigidBody.AddForce(inputController.moveDirection * force, ForceMode.Impulse);
                 inputController.touchIsEnded = false;
             }
         }

@@ -7,16 +7,17 @@ namespace sausage
     public class InputController : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
     {
         public Vector2 inputDirection;
+        public Vector2 moveDirection;
         public GameObject beginTouch;
         public GameObject dragTouch;
         public bool touchIsEnded;
+        public bool touchIsMoved;
 
 
 
         private void Update()
         {
             TouchInput();
-            Debug.Log(inputDirection);
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -33,28 +34,27 @@ namespace sausage
 
         public void OnPointerUp(PointerEventData eventData)
         {
-
+            inputDirection = Vector2.zero;
         }
 
         private void InputDirection()
         {
             inputDirection = (beginTouch.transform.position - dragTouch.transform.position)/Screen.width;
-            
-            Debug.Log(inputDirection);
+            moveDirection = (beginTouch.transform.position - dragTouch.transform.position) / Screen.width;
         }
 
         public void TouchInput()
         {
             foreach (Touch touch in Input.touches)
             {
-                Debug.Log(touch.phase);
                 if (touch.phase == TouchPhase.Ended)
                 {
                     touchIsEnded = true;
+                    touchIsMoved = false;
                 }
-                else
+                if (touch.phase == TouchPhase.Moved)
                 {
-                    touchIsEnded = false;
+                    touchIsMoved = true;
                 }
             }
         }

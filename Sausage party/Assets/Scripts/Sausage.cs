@@ -8,7 +8,7 @@ namespace sausage
     {
         public bool isGroundent;
         [SerializeField]
-        public Rigidbody rigidbody;
+        public Rigidbody rigidBody;
         Movment movment;
         InputController input;
         TrajectoryRenderer trajectoryRenderer;
@@ -16,6 +16,8 @@ namespace sausage
         // Start is called before the first frame update
         void Start()
         {
+            input = FindObjectOfType<InputController>();
+            rigidBody = gameObject.GetComponent<Rigidbody>();
             trajectoryRenderer = FindObjectOfType<TrajectoryRenderer>();
             movment = GetComponent<Movment>();
         }
@@ -23,12 +25,12 @@ namespace sausage
         // Update is called once per frame
         void Update()
         {
-
+            DrawTrajectory();
         }
 
         void DrawTrajectory()
         {
-            
+                trajectoryRenderer.ShowTrajectory(rigidBody.transform.position, input.inputDirection);
         }
     }
 }

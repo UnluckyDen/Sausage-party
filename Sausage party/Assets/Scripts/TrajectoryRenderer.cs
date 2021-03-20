@@ -8,16 +8,13 @@ namespace sausage
     {
         private LineRenderer lineRenderer;
         Vector3[] points = new Vector3[10];
-
-        Sausage sausage;
-        InputController inputController;
+        [SerializeField]
+        float lineDrawSizeCoefficient;
 
         // Start is called before the first frame update
         void Start()
         {
             lineRenderer = GetComponent<LineRenderer>();
-            sausage = FindObjectOfType<Sausage>();
-            inputController = FindObjectOfType<InputController>();
         }
 
         public void ShowTrajectory(Vector3 origin, Vector3 speed)
@@ -25,14 +22,9 @@ namespace sausage
             lineRenderer.positionCount = points.Length;
             for (int i = 0; i < points.Length; i++)
             {
-                points[i] = origin + speed * 0.3f * i;
-
+                points[i] = origin + speed * i *lineDrawSizeCoefficient;
             }
             lineRenderer.SetPositions(points);
-        }
-        private void Update()
-        {
-            ShowTrajectory(sausage.rigidbody.transform.position, inputController.inputDirection);
         }
     }
 }

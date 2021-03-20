@@ -17,7 +17,6 @@ namespace sausage
         private void LateUpdate()
         {
             Follow(Time.deltaTime);
-            Debug.Log("working");
         }
 
         private void Follow(float delta)
