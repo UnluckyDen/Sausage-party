@@ -819,6 +819,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 405946133170422146, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405946133170422156, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311778248222582125, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311778248222582127, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558478968501795576, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558478968501795582, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211377152546307234, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211377152546307244, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882985590640104285, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882985590640104287, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3985922836699950313, guid: 9f520332e26e4c848ad88874304b329a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -883,6 +933,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sausage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745010999850420408, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745010999850420414, guid: 9f520332e26e4c848ad88874304b329a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5745010999850420415, guid: 9f520332e26e4c848ad88874304b329a,
         type: 3}
