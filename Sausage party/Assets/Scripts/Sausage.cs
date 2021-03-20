@@ -6,7 +6,8 @@ namespace sausage
 {
     public class Sausage : MonoBehaviour
     {
-        public bool isGroundent;
+        public bool isGrounded;
+        public bool isInAir;
         [SerializeField]
         public Rigidbody rigidBody;
         Movment movment;
@@ -26,11 +27,23 @@ namespace sausage
         void Update()
         {
             DrawTrajectory();
+            Moving();
         }
 
         void DrawTrajectory()
         {
                 trajectoryRenderer.ShowTrajectory(rigidBody.transform.position, input.inputDirection);
+        }
+
+        void Moving()
+        {
+            if (input.touchIsEnded)
+            movment.Push(rigidBody, input.moveDirection, isGrounded);
+            if (isInAir)
+            {
+                input.moveDirection = Vector2.zero;
+                input.touchIsEnded = false;
+            }
         }
     }
 }

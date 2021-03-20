@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "HT7460204488",
         "name": "com.DefaultCompany.Sausageparty",
-        "processId": 11425,
+        "processId": 19630,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -156,6 +156,12 @@
             "deviceId": "HT7460204488",
             "name": "com.DefaultCompany.Sausageparty",
             "processId": 11425,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 19630,
             "exited": true
         }
     ],

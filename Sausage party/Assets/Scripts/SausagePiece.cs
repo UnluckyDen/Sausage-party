@@ -17,13 +17,17 @@ namespace sausage
         {
             if (collision.collider.CompareTag("Floor"))
             {
-                sausage.isGroundent = true;
+                sausage.isGrounded = true;
+                sausage.isInAir = false;
             }
         }
         private void OnCollisionExit(Collision collision)
         {
-            if(collision.collider.CompareTag("Floor"))
-            sausage.isGroundent = false;
+            if (collision.collider.CompareTag("Floor"))
+            {
+                sausage.isGrounded = false;
+                sausage.isInAir = true;
+            }
         }
     }
 }

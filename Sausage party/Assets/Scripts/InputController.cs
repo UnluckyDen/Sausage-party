@@ -13,8 +13,6 @@ namespace sausage
         public bool touchIsEnded;
         public bool touchIsMoved;
 
-
-
         private void Update()
         {
             TouchInput();
@@ -39,8 +37,8 @@ namespace sausage
 
         private void InputDirection()
         {
-            inputDirection = (beginTouch.transform.position - dragTouch.transform.position)/Screen.width;
-            moveDirection = (beginTouch.transform.position - dragTouch.transform.position) / Screen.width;
+            inputDirection = (beginTouch.transform.position - dragTouch.transform.position) / Screen.width;
+            moveDirection = (beginTouch.transform.position - dragTouch.transform.position) / Screen.width;          
         }
 
         public void TouchInput()

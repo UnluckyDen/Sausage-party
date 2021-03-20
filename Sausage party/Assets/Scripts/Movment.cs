@@ -8,28 +8,12 @@ namespace sausage
     {
         [SerializeField]
         private float force;
-        private InputController inputController;
-        Sausage sausage;
 
-        // Start is called before the first frame update
-        void Start()
+        public void Push(Rigidbody rigidBody,Vector2 direction, bool isGrounded)
         {
-            sausage = gameObject.GetComponent<Sausage>();
-            inputController = FindObjectOfType<InputController>();
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            Push();
-        }
-
-        private void Push()
-        {
-            if (sausage.isGroundent && inputController.touchIsEnded)
+            if (isGrounded)
             {
-                sausage.rigidBody.AddForce(inputController.moveDirection * force, ForceMode.Impulse);
-                inputController.touchIsEnded = false;
+                rigidBody.AddForce(direction * force, ForceMode.Impulse);
             }
         }
     }
