@@ -2,17 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sausage : MonoBehaviour
+namespace sausage
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Sausage : MonoBehaviour
     {
-        
-    }
+        public bool isGrounded;
+        public bool isInAir;
+        public bool landing;
+        [SerializeField]
+        public Rigidbody rigidBody;
+        Movment movment;
+        InputController input;
+        TrajectoryRenderer trajectoryRenderer;
+        AudioSource audioSource;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called before the first frame update
+        void Start()
+        {
+            input = FindObjectOfType<InputController>();
+            rigidBody = gameObject.GetComponent<Rigidbody>();
+            trajectoryRenderer = FindObjectOfType<TrajectoryRenderer>();
+            movment = GetComponent<Movment>();
+            audioSource = gameObject.GetComponent<AudioSource>();
+            Debug.Log(audioSource);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            DrawTrajectory();
+            Moving();
+            Landing();
+        }
+
+        void DrawTrajectory()
+        {
+                trajectoryRenderer.ShowTrajectory(rigidBody.transform.position, input.inputDirection);
+        }
+
+        void Moving()
+        {
+            if (input.touchIsEnded)
+            movment.Push(rigidBody, input.moveDirection, isGrounded);
+            if (isInAir)
+            {
+                input.moveDirection = Vector2.zero;
+                input.touchIsEnded = false;
+            }
+        }
+
+        void Landing()
+        {
+            if (landing)
+            {
+                audioSource.pitch = Random.Range(0.6f,1.8f);
+                audioSource.Play();
+            }
+        }
     }
 }

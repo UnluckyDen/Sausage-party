@@ -1,0 +1,233 @@
+{
+    "m_SelectedDeviceId": "HT7460204488",
+    "m_SelectedPackage": {
+        "deviceId": "HT7460204488",
+        "name": "com.UnluckyDEN.SlickSausage",
+        "processId": 13641,
+        "exited": true
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 26127,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 27317,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 28956,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 2082,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 2966,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 7117,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 22102,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 23228,
+            "exited": false
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 24016,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 25219,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 27093,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 27977,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 31137,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 31902,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 11481,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 12129,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 13657,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 15193,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 18729,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 21455,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 22597,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 23390,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 7197,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 8323,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 11425,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.DefaultCompany.Sausageparty",
+            "processId": 19630,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDEN.SlickSausage",
+            "processId": 30620,
+            "exited": true
+        },
+        {
+            "deviceId": "HT7460204488",
+            "name": "com.UnluckyDEN.SlickSausage",
+            "processId": 13641,
+            "exited": true
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 1,
+        "Behavior": 1
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
